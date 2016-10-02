@@ -1,0 +1,305 @@
+#logo{
+	position: fixed;
+	top: 0px;
+	left: 120px;
+	width: 480px;
+	height: 140px;
+    z-index: 50;
+	background-color: #fff;
+}
+#doubanfm{
+	position: fixed;
+	left: 290px;
+    top: 60px;
+}
+#nav{
+	position: fixed;
+	right: 250px;
+	top: 0px;
+}
+.nav{
+	float: left;
+	padding: 10px;
+	list-style-type: none;
+	background-color: #e5e6e6;	
+	font-size: 10px;
+	color: #666;
+}
+#nav a{
+	text-decoration:none;
+}
+#nav a:hover .nav{
+	color: #000;
+}
+#back{
+	position: fixed;
+	left: 0px;
+	top:170px;
+    background-color: #e5e6e6;
+    width: 100%;
+    height: 275px;
+}
+#zhaohe{
+	position: absolute;
+	left: 245px;
+    top: 179px;
+}
+#zhaohe li{
+	padding-left: 15px;
+	list-style-type: none;
+	font-size: 13px;
+    width: 205px;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    margin-bottom: 18px;
+    position: relative;
+    cursor: pointer;
+    background-color: #d4ded9;
+}
+.playing{
+	float: right;
+	position: relative;
+    right: 15px;
+    top: 15px;
+}
+#history{
+	position: absolute;
+	left: 286px;
+    top: 373px;
+}
+.hr{
+    background-color: #e1e1e1;
+    width: 166px;
+    position: relative;
+    left: 49px;
+    top: -15px;
+}
+#try{
+	position: absolute;
+	left: 286px;
+    top: 412px;
+}
+#try-list{
+	position: absolute;
+	left: -40px;
+    top: 25px;
+}
+#try-list li{
+	list-style-type: none;
+	padding-left: 15px;
+	font-size: 13px;
+    width: 205px;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    margin-bottom: 18px;
+    position: relative;
+    cursor: pointer;
+    background-color: #d4ded9;
+}
+.star{
+	float: right;
+	position: relative;
+    right: -47px;
+    top: 0px;
+}
+#pinpai{
+	position: absolute;
+	left: 286px;
+    top: 740px;
+}
+#pinpai-ls{
+	position: absolute;
+	left: 245px;
+    top: 766px;
+}
+#pinpai-ls li{
+	padding-left: 15px;
+	list-style-type: none;
+	font-size: 13px;
+    width: 205px;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    margin-bottom: 18px;
+    position: relative;
+    cursor: pointer;
+    background-color: #d4ded9;
+}
+#player{
+	position: fixed;
+	left: 622px;
+    top: 90px;
+	width:510px;
+	height:245px;
+	border: 1px solid #000;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+#poster{
+	width:245px;
+	height:245px;
+	border: 1px solid #000;
+}
+.picture{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width:245px;
+	height:245px;
+}
+#chakan{
+	position: absolute;
+	top: 102px;
+    left: 60px;
+    width: 100px;
+    font-size: 10px;
+    height: 15px;
+    background-color: black;
+    opacity:0.6;
+    padding: 5px;
+    padding-left: 26px;
+    color: #fff;
+    display: none;
+}
+#album{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width:245px;
+	height:245px;
+	border: 1px solid #999;
+	background-color: #c1c1c1;
+	opacity:0.2;
+	display: none;
+}
+#music{
+	position: absolute;
+	top: 0px;
+	left: 245px;
+	width:263px;
+	height:245px;
+	border: 1px solid #000;
+}#continue{
+	position: absolute;
+	top: 0px;
+	left: 245px;
+	width:263px;
+	height:245px;
+	border: 1px solid #aaccff;
+}
+.mp3{
+	position: absolute;
+	top: 100px;
+	left: 145px;
+}
+#phone{
+	position: fixed;
+	left:620px;
+    top: 370px;
+}
+#phone span{
+	font-size: 13px;
+	color: #999;
+	position: relative;
+	top: -5px;
+}
+#phone a{
+	text-decoration: none;
+}
+#same{
+	position: fixed;
+	left:1000px;
+    top: 368px;
+    background-color: #e1e8e5;
+    font-size: 12px;
+    width: 98px;
+    height: 24px;
+    border: 1px solid #9dd6c5;
+    color: #5b9;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+
+#load{
+	position: fixed;
+	left:1000px;
+    top: 480px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    background-color: RGB(0, 195, 90);
+    width: 148px;
+    padding: 0 0 0 6px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#load span{
+	position: absolute;
+	top: -3px;
+}
+#share{
+	position: fixed;
+    top: 395px;
+    left: 1039px;
+    font-size: 12px;
+    color: #999;
+}
+#guanggao{
+	position: fixed;
+	left: 214px;
+	top:  540px;
+	height: 195px;
+	background-color: #fff;
+}
+#guanggao a{
+	position: relative;
+	top:  15px;
+}
+#banquan{
+	position: absolute;
+	left: 314px;
+	top: 1000px;
+	color: #999;
+    text-align: center;
+    line-height: 40px;
+    font-size: 10px;
+}
+#banquan a{
+	color: #999;
+	text-decoration: none;
+}
+
+#pull{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 25px;
+	box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);
+	z-index: 999;
+	background-color: #fff;
+	opacity: 0.4;
+	cursor: pointer;
+}
+#zhankai{
+	position:  fixed;
+    top: 262px;
+    left: 10px;
+    height: 100px;
+    width: 15px;
+    line-height: 10px;
+    background-color: #e5e6e6;
+    cursor: pointer;
+}
+#zhankai span{
+	position: relative;
+	top: 45px;
+	left: 5px;
+}
+#pull:hover #zhankai{
+	background-color: #9dd6c5;
+}
