@@ -273,7 +273,7 @@
 	text-decoration: none;
 }
 
-#pull{
+/*#pull{
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -282,7 +282,6 @@
 	box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);
 	z-index: 999;
 	background-color: #fff;
-	opacity: 0.4;
 	cursor: pointer;
 }
 #zhankai{
@@ -302,4 +301,4 @@
 }
 #pull:hover #zhankai{
 	background-color: #9dd6c5;
-}
+}*/

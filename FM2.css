@@ -1,0 +1,149 @@
+#quanbu{
+	width: 50%;
+	height: 1480px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: 1px solid #000;
+	z-index: 999;
+	background-color: #fff;
+}
+#pull{
+	position: fixed;
+	top: 0px;
+	left: 650px;
+	height: 100%;
+	width: 25px;
+	box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);
+	z-index: 88;
+	cursor: pointer;
+}
+#zhankai{
+	position:  fixed;
+    top: 262px;
+    left: 660px;
+    height: 100px;
+    width: 15px;
+    line-height: 10px;
+    background-color: #e5e6e6;
+    cursor: pointer;
+}
+#zhankai span{
+	position: relative;
+	top: 45px;
+	left: 5px;
+	z-index: 100;
+}
+#pull:hover #zhankai{
+	background-color: #9dd6c5;
+}
+#head{
+	position: absolute;
+	top:  72px;
+    left: 50px;
+}
+#wenzi{
+	height: 30px;
+    line-height: 30px;
+    color: #a2a8ac;
+    font-size: 30px;
+}
+#head input{
+	position: absolute;
+    top: 2px;
+    left: 275px;
+    height: 30px;
+    width: 240px;
+    border: 1px solid #e1e8e6;
+    background: #fff;
+}
+#head img{
+	position: absolute;
+	top:  9px;
+    left: 493px;
+}
+#tupian{
+	position: absolute;
+	left: 0px;
+	top:170px;
+    background: #eff5f2;
+    color: #636564;
+    width: 100%;
+    height: 275px;
+}
+#fenlie{
+	position: absolute;
+	top: 471px;
+    left: 21px;
+    height: 56px;
+    width: 554px;
+}
+#fenlie li{
+	font-size: 12px;
+	float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+    color: #888;
+    line-height: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+#fenlie li:hover{
+	color: #9dd6c5;
+}
+#hot{
+	position: absolute;
+	left: 54px;
+    top: 553px;
+	width: 70%;
+	height:366px;
+	border: 1px solid #000;
+}
+#hot li{
+	float: left;
+	width: 50%;
+}
+.ge{
+	color: #888;
+	font-size: 12px;
+ 	cursor: pointer;
+}
+.xiang{
+	color: #888;
+	font-size: 12px;
+ 	cursor: pointer;
+ 	text-decoration: none;
+}
+.xiang:hover{
+	color: #9dd6c5;
+}
+.neirong{
+	position: relative;
+	top: -73px;
+    left: 53px;
+}
+#up{
+	position: absolute;
+	left: 54px;
+	top: 921px;
+	width: 70%;
+	height:366px;
+	border: 1px solid #000;
+}
+#up li{
+	float: left;
+	width: 50%;
+}
+#pai{
+	position: absolute;
+	left: 54px;
+	top: 1289px;
+    width: 70%;
+    height: 115px;
+	border: 1px solid #000;
+}
+#pai li{
+	float: left;
+	width: 50%;
+}
