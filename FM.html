@@ -133,7 +133,7 @@
 	</div>
 	<div id="tu">
 		<div id="tuwall">
-			<img src="jpg/14.jpg" class="datu">
+			<img src="jpg/14.jpg" class="datu" style=" display: block; ">
 			<img src="jpg/15.jpg" class="datu">
 			<img src="jpg/16.jpg" class="datu">
 			<img src="jpg/17.jpg" class="datu">
@@ -142,15 +142,43 @@
 		</div>
 		<div id="tuhao">
 			<ul type="none">
-				<li class="num">1</li>
-				<li class="num">2</li>
-				<li class="num">3</li>
-				<li class="num">4</li>
-				<li class="num">5</li>
-				<li class="num">6</li>
+				<li class="num" style=" background-color: #9dd6c5" onmouseover="djxs(0)">1</li>
+				<li class="num" onmouseover="djxs(1)">2</li>
+				<li class="num" onmouseover="djxs(2)">3</li>
+				<li class="num" onmouseover="djxs(3)">4</li>
+				<li class="num" onmouseover="djxs(4)">5</li>
+				<li class="num" onmouseover="djxs(5)">6</li>
 			</ul>
 		</div>
-		<div id="lie1" class="lie">
+		<script type="text/javascript">
+			function djxs(n){
+			var arr= document.getElementsByClassName("datu");
+			arr[0].style.display="none";
+			arr[1].style.display="none";
+			arr[2].style.display="none";
+			arr[3].style.display="none";
+			arr[4].style.display="none";
+			arr[5].style.display="none";
+			arr[n].style.display="block";
+			var ar= document.getElementsByClassName("num");
+			ar[0].style.backgroundColor="#D4E1DC";
+			ar[1].style.backgroundColor="#D4E1DC";
+			ar[2].style.backgroundColor="#D4E1DC";
+			ar[3].style.backgroundColor="#D4E1DC";
+			ar[4].style.backgroundColor="#D4E1DC";
+			ar[5].style.backgroundColor="#D4E1DC";
+			ar[n].style.backgroundColor="#9dd6c5";
+			var a= document.getElementsByClassName("lie");
+			a[0].style.display="none";
+			a[1].style.display="none";
+			a[2].style.display="none";
+			a[3].style.display="none";
+			a[4].style.display="none";
+			a[5].style.display="none";
+			a[n].style.display="block";
+			}
+		</script>
+		<div id="lie1" class="lie" style=" display: block; ">
 			<span class="cla">轻音乐 MHz</span>
 			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
 			<span class="ge">100首歌曲</span>
@@ -159,31 +187,31 @@
 		<div id="lie2" class="lie">
 			<span class="cla">电子 MHz</span>
 			<p  class="ge">小心，有电，注意，节拍</p>
-			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
+			<p  class="ge">热门歌曲：Djadje / No Job No Money / Esa noche</p>
 			<span class="ge">108首歌曲</span>
 			<a href="#" class="xiang">兆赫详情</a>
 		</div>
 		<div id="lie3" class="lie">
 			<span class="cla">雷鬼 MHz</span>
-			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
+			<p  class="ge">热门歌曲：Djadje / No Work No Job / Esa noche</p>
 			<span class="ge">180首歌曲</span>
 			<a href="#" class="xiang">兆赫详情</a>
 		</div>
 		<div id="lie4" class="lie">
 			<span class="cla">R&B MHz</span>
-			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
+			<p  class="ge">热门歌曲： No Work No Job No Money / Esa noche</p>
 			<span class="ge">240首歌曲</span>
 			<a href="#" class="xiang">兆赫详情</a>
 		</div>
 		<div id="lie5" class="lie">
 			<span class="cla">动漫音乐 MHz</span>
-			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
+			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money /a noche</p>
 			<span class="ge">100首歌曲</span>
 			<a href="#" class="xiang">兆赫详情</a>
 		</div>
 		<div id="lie6" class="lie">
 			<span class="cla">世界音乐 MHz</span>
-			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
+			<p  class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche / abc</p>
 			<span class="ge">200首歌曲</span>
 			<a href="#" class="xiang">兆赫详情</a>
 		</div>
