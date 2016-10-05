@@ -62,7 +62,7 @@
 	top:  9px;
     left: 493px;
 }
-#tupian{
+#tuwall{
 	position: absolute;
 	left: 0px;
 	top:170px;
@@ -115,13 +115,21 @@
  	cursor: pointer;
  	text-decoration: none;
 }
+.yuan{
+    border-radius: 45px;
+}
 .xiang:hover{
 	color: #9dd6c5;
 }
 .neirong{
 	position: relative;
-	top: -73px;
+	top: -66px;
     left: 53px;
+}
+.neirong h4{
+	height: 0px;
+    cursor: pointer;
+    font-weight: normal;
 }
 #up{
 	position: absolute;
@@ -146,4 +154,43 @@
 #pai li{
 	float: left;
 	width: 50%;
+}
+.title{
+	font-size: 13px;
+	color: #888;
+	font-weight: normal;
+}
+.datu{
+	position: absolute;
+}
+#tuhao{
+	position: absolute;
+	left:  280px;
+    top: 181px;
+}
+#tuhao li{
+	color: #888;
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 16px;
+    background: #D4E1DC;
+    text-align: center;
+    margin-right: 4px;
+    cursor: pointer;
+
+}
+.lie{
+	width: 300px;
+	height: 130px;
+	border: 1px solid #000;
+	position: absolute;
+	left:  321px;
+    top: 249px;
+}
+.cla{
+	color: #636564;
+	font-size: 18px;
+	cursor: pointer;
 }
