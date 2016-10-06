@@ -202,7 +202,7 @@
 	height:245px;
 	background-color: #fff;
 	opacity: 0.4;
-	border: 1px solid #aaccff;
+	display: none;
 }
 #jixu{
 	position: absolute;
@@ -211,10 +211,16 @@
     font-size: 13px;
     display: none;
 }
-#ting{
+#ting1{
 	position: absolute;
 	left: 220px;
     top: 0px;
+}
+#ting2{
+	position: absolute;
+	left: 220px;
+    top: 0px;
+    display: none;
 }
 #xiliename{
 	font-size: 25px;
@@ -293,7 +299,7 @@
 }
 .xin2{
 	position: absolute;
-	left: 82px;
+	left: 76px;
     top: 166px;
     cursor: pointer;
 }
@@ -308,18 +314,20 @@
 	left: 146px;
     top: 168px;
     cursor: pointer;
+    display: none;
 }
 #xiayi1{
 	position: absolute;
 	left: 220px;
-    top: 188px;
+    top: 193px;
     cursor: pointer;
 }
 #xiayi2{
 	position: absolute;
 	left:216px;
-    top: 161px;
+    top: 166px;
     cursor: pointer;
+    display: none;
 }
 .mp3{
 	position: absolute;

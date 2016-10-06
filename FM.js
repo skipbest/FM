@@ -111,4 +111,98 @@
 		chakan.style.display="none";
 		album.style.display="none";
 	}
+
+	var ting1=document.getElementById("ting1");
+	var ting2=document.getElementById("ting2");
+	var jixu=document.getElementById("jixu");
+	var contin=document.getElementById("continue")
+	ting1.onmouseover=function(){
+		ting2.style.display='block';
+		ting1.style.display='none';
+	}
+	ting2.onmouseout=function(){
+		ting1.style.display='block';
+		ting2.style.display='none';
+	}
+	ting2.onclick=function(){
+		ting1.style.display='none';
+		ting2.style.display='none';
+		jixu.style.display='block';
+		contin.style.display='block';
+	}
+	contin.onclick=function(){
+		ting1.style.display='block';
+		ting2.style.display='none';
+		jixu.style.display='none';
+		contin.style.display='none';
+	}
+
+
+	var heixin=document.getElementById("heixin");
+	var huixin=document.getElementById("huixin");
+	var hongxin1=document.getElementById("hongxin1");
+	var hongxin2=document.getElementById("hongxin2");
+	heixin.onmouseover=function(){
+		huixin.style.display='block';
+		hongxin1.style.display='none';
+		hongxin2.style.display='none';
+		heixin.style.display='none';
+	}
+	huixin.onmouseout=function(){
+		heixin.style.display='block';
+		hongxin1.style.display='none';
+		hongxin2.style.display='none';
+		huixin.style.display='none';
+	}
+	huixin.onclick=function(){
+		hongxin1.style.display='block';	
+		heixin.style.display='none';
+		huixin.style.display='none';
+		hongxin2.style.display='none';
+	}
+	hongxin1.onmouseover=function(){
+		hongxin2.style.display='block';	
+		hongxin1.style.display='none';	
+		heixin.style.display='none';
+		huixin.style.display='none';
+	}
+	hongxin2.onmouseout=function(){
+		hongxin1.style.display='block';	
+		hongxin2.style.display='none';	
+		heixin.style.display='none';
+		huixin.style.display='none';
+	}
+	hongxin2.onclick=function(){
+		heixin.style.display='block';
+		huixin.style.display='none';
+		hongxin1.style.display='none';
+		hongxin2.style.display='none';
+	}
+
+	var tong1=document.getElementById("tong1");
+	var tong2=document.getElementById("tong2");
+	tong1.onmouseover=function(){
+		tong2.style.display='block';
+		tong1.style.display='none';
+	}
+	tong2.onmouseout=function(){
+		tong1.style.display='block';
+		tong2.style.display='none';
+	}
+
+	var xiayi1=document.getElementById("xiayi1");
+	var xiayi2=document.getElementById("xiayi2");
+	xiayi1.onmouseover=function(){
+		xiayi2.style.display='block';
+		xiayi1.style.display='none';
+	}
+	xiayi2.onmouseout=function(){
+		xiayi1.style.display='block';
+		xiayi2.style.display='none';
+	}
+	// xiayi2.onclick=function(){
+
+	// }
+
+
 }(window))
