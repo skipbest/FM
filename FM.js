@@ -112,6 +112,27 @@
 		album.style.display="none";
 	}
 
+	var audio =document.getElementById('audio');
+	var xstime=document.getElementById('xstime');
+	audio.onloadedmetadata = function() {
+      	var ztime=audio.duration;
+        var zmiao = (parseInt(ztime)) % 60;
+        var zfen = (parseInt(ztime / 60));
+        xstime.innerHTML ='-'+ zfen + ':' + zmiao;
+    }
+
+    audio.ontimeupdate = function() {
+        var ztime = audio.duration;
+        var bshiJian = audio.currentTime;
+        var zmiao = (parseInt(ztime)) % 60;
+        var zfen = (parseInt(ztime / 60));
+        var bmiao = (parseInt(bshiJian)) % 60;
+        var bfen = (parseInt(bshiJian / 60));
+        var fen=zfen-bfen;
+        var miao=zmiao-bmiao;
+        xstime.innerHTML = '-'+fen + ':' + miao ;
+    }
+
 	var ting1=document.getElementById("ting1");
 	var ting2=document.getElementById("ting2");
 	var jixu=document.getElementById("jixu");

@@ -259,10 +259,9 @@
 }
 #xstime{
 	position: absolute;
-	left: 180px;
+	left: 193px;
     top: 115px;
-    border: 1px solid #000;
-    width: 50px;
+    width: 35px;
     height: 15px;
     font-size: 13px;
 }
