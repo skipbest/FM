@@ -83,5 +83,32 @@
 	}
 
 
+	var share=document.getElementById("share");
+	var fenxiang=document.getElementById("fenxiang");
+	var duan=document.getElementById("duan");
+	fenxiang.style.left='1039px';
+	duan.style.left='1104px';
+	share.onmouseover=function(){
+		fenxiang.style.left='960px';
+		duan.style.left='1034px';
+		duan.style.display="block";
+	}
+	share.onmouseout=function(){
+		fenxiang.style.left='1039px';
+		duan.style.left='1104px';
+		duan.style.display="none";
+	}
 	
+
+	var poster=document.getElementById("poster");
+	var album=document.getElementById("album");
+	var chakan=document.getElementById("chakan");
+	poster.onmouseover=function(){
+		chakan.style.display="block";
+		album.style.display="block";
+	}
+	album.onmouseout=function(){
+		chakan.style.display="none";
+		album.style.display="none";
+	}
 }(window))
