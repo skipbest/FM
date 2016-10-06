@@ -7,6 +7,8 @@
 	border: 1px solid #000;
 	z-index: 999;
 	background-color: #fff;
+	display: none;
+	transition:display 10s;
 }
 #pull{
 	position: fixed;
@@ -97,8 +99,7 @@
 	left: 54px;
     top: 553px;
 	width: 70%;
-	height:366px;
-	border: 1px solid #000;
+	height:366px;00;
 }
 #hot li{
 	float: left;
@@ -117,6 +118,18 @@
 }
 .yuan{
     border-radius: 45px;
+}
+.yin{
+	/*position: relative;
+	left:-53px;
+    top: 0px;*/
+    display: none;
+}
+.dian{
+	/*position: relative;
+	left:-106px;
+    top: 0px;*/
+    display: none;
 }
 .xiang:hover{
 	color: #9dd6c5;
@@ -137,7 +150,6 @@
 	top: 921px;
 	width: 70%;
 	height:366px;
-	border: 1px solid #000;
 }
 #up li{
 	float: left;
@@ -149,7 +161,6 @@
 	top: 1289px;
     width: 70%;
     height: 115px;
-	border: 1px solid #000;
 }
 #pai li{
 	float: left;

@@ -33,7 +33,7 @@
 }
 #back{
 	position: fixed;
-	left: 0px;
+	left: 30px;
 	top:170px;
     background-color: #e5e6e6;
     width: 100%;
@@ -57,11 +57,15 @@
     cursor: pointer;
     background-color: #d4ded9;
 }
+#zhaohe li:hover{
+    background-color: #bccac5;
+}
 .playing{
 	float: right;
 	position: relative;
     right: 15px;
     top: 15px;
+    display: none;
 }
 #history{
 	position: absolute;
@@ -98,11 +102,15 @@
     cursor: pointer;
     background-color: #d4ded9;
 }
+#try-list li:hover{
+    background-color: #bccac5;
+}
 .star{
 	float: right;
 	position: relative;
     right: -47px;
     top: 0px;
+    display: none;
 }
 #pinpai{
 	position: absolute;
@@ -126,6 +134,9 @@
     position: relative;
     cursor: pointer;
     background-color: #d4ded9;
+}
+#pinpai-ls li:hover{
+    background-color: #bccac5;
 }
 #player{
 	position: fixed;
@@ -204,6 +215,9 @@
 	position: relative;
 	top: -5px;
 }
+#phone span:hover{
+	color: #aaa;
+}
 #phone a{
 	text-decoration: none;
 }
@@ -220,7 +234,10 @@
     line-height: 24px;
     cursor: pointer;
 }
-
+#same:hover{
+	color: #e1e8e5;
+	background-color: #9cd6c5;
+}
 
 #load{
 	position: fixed;
@@ -236,6 +253,9 @@
     line-height: 36px;
     border-radius: 4px;
     cursor: pointer;
+}
+#load:hover{
+	background-color: #1ac96a;
 }
 #load span{
 	position: absolute;
@@ -273,32 +293,32 @@
 	text-decoration: none;
 }
 
-/*#pull{
+#pull1{
 	position: fixed;
 	top: 0px;
-	left: 0px;
+	left: 6px;
 	height: 100%;
 	width: 25px;
 	box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);
-	z-index: 999;
-	background-color: #fff;
+	z-index: 88;
 	cursor: pointer;
 }
-#zhankai{
+#zhankai1{
 	position:  fixed;
     top: 262px;
-    left: 10px;
+    left: 15px;
     height: 100px;
     width: 15px;
     line-height: 10px;
     background-color: #e5e6e6;
     cursor: pointer;
 }
-#zhankai span{
+#zhankai1 span{
 	position: relative;
 	top: 45px;
 	left: 5px;
+	z-index: 100;
 }
-#pull:hover #zhankai{
+#pull1:hover #zhankai1{
 	background-color: #9dd6c5;
-}*/
+}

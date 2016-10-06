@@ -44,6 +44,7 @@
 		kid= window.setInterval(tuqieHua,2000);
 		jsq= window.setInterval(wenziqieHua,2000);
 		js= window.setInterval(numqieHua,2000);
+		if (true) {} else {}
 	}
 	var tu=document.getElementById('tu');
 	tu.onmouseover=function over(){
@@ -56,6 +57,31 @@
 		jsq = window.setInterval(wenziqieHua,2000);
 		js = window.setInterval(numqieHua,2000);
 	}
+
+	var zhankai =  document.getElementById("zhankai");
+	var quanbu =  document.getElementById("quanbu");
+	var banquan=  document.getElementById("banquan");
+	zhankai.onclick=function (){
+		quanbu.style.display="none";
+		banquan.style.display="block";
+		//quanbu.transition="display 10s";
+	}
+	var zhankai1 =  document.getElementById("zhankai1");
+	zhankai1.onclick=function (){
+		quanbu.style.display="block";
+		banquan.style.display="none";
+		quanbu.style.transitionProperty="display";
+		quanbu.style.transitionDuration="6s";
+	}
+	var same=document.getElementById("same");
+	var yinfu=document.getElementById("yinfu");
+	same.onmouseover=function(){
+		yinfu.src="jpg/35.jpg";
+	}
+	same.onmouseout=function(){
+		yinfu.src="jpg/7.jpg";
+	}
+
 
 	
 }(window))

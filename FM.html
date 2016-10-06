@@ -24,44 +24,44 @@
 <div id="list">
 	<div id="zhaohe">
 		<ul>
-	        <li>
+	        <li class="zh" onclick="cl(0)">
 	            <a><span>我的私人兆赫</span></a>
 	            <span><img src="jpg/4.jpg" class="playing"></span>
 	        </li>
-	        <li>
+	        <li class="zh" onclick="cl(1)">
 	            <a><span>我的红心兆赫</span></a>
 	            <span><img src="jpg/4.jpg" class="playing"></span>
 	        </li>
-	        <li>
+	        <li class="zh" onclick="cl(2)">
 	            <a><span>豆瓣精选兆赫</span></a>
 	            <span><img src="jpg/4.jpg" class="playing"></span>
 	        </li>
 	    </ul>
 	</div>
 	<div id="history">
-		<span style="color:#888; font-size:12px">最近收听</span><hr class="hr">	
+		<span style="color:#888; font-size:12px" >最近收听</span><hr class="hr">	
 	</div>
 	<div id="try">
 		<span style="color:#888; font-size:12px">试试这些</span><hr class="hr">
 		<div id="try-list">
 			<ul>
-		        <li>
+		        <li class="zh" onclick="cl(3);c(0)">
 		            <a><span>Sugar 系 MHz</span></a>
 		            <span><img src="jpg/4.jpg" class="playing"><img src="jpg/5.jpg" class="star"></span>
 		        </li>
-		        <li>
+		        <li class="zh" onclick="cl(4);c(1)">
 		            <a><span>Luv Letter 系 MHz</span></a>
 		            <span><img src="jpg/4.jpg" class="playing"><img src="jpg/5.jpg" class="star"></span>
 		        </li>
-		        <li>
+		        <li class="zh" onclick="cl(5);c(2)">
 		            <a><span>思念是一种病 系 MHz</span></a>
 		            <span><img src="jpg/4.jpg" class="playing"><img src="jpg/5.jpg" class="star"></span>	         
 		        </li>
-		        <li>
+		        <li class="zh" onclick="cl(6);c(3)">
 		            <a><span>Someone Like You 系 MHz</span></a>
 		            <span><img src="jpg/4.jpg" class="playing"><img src="jpg/5.jpg" class="star"></span>	         
 		        </li>
-		        <li>
+		        <li class="zh" onclick="cl(7);c(4)">
 		            <a><span>Luv Letter 系 MHz</span></a>
 		            <span><img src="jpg/4.jpg" class="playing"><img src="jpg/5.jpg" class="star"></span>    
 		        </li>
@@ -73,10 +73,35 @@
 		</div>
 		<div id="pinpai-ls">
 			<ul>
-		        <li>
+		        <li class="zh" onclick="cl(8)">
 		            <a><span>SK-II 最初的梦 MHz</span></a>
 		            <span><img src="jpg/4.jpg" class="playing"></span>
 		        </li>
+		        <script type="text/javascript">
+		        	var playing =  document.getElementsByClassName("playing");
+					var star =  document.getElementsByClassName("star");
+					var zh=  document.getElementsByClassName("zh");
+					function cl(p){
+						for ( i = 0; i < zh.length; i++) {
+							if (i==p) {
+								zh[i].style.backgroundColor="#9dd6c5";
+								playing[i].style.display="block";
+							}else{
+								zh[i].style.backgroundColor="#d4ded9";
+								playing[i].style.display="none";
+							}
+						}							
+					}
+					function c(st){
+						for ( i = 0; i < star.length; i++) {
+							if (i==st) {
+								star[i].style.display="block";
+							}else{
+								star[i].style.display="none";
+							}
+						}							
+					}
+		        </script>
 		    </ul>
 		</div>	
 	</div>
@@ -102,7 +127,7 @@
 	<a href="#"><img src="jpg/6.jpg"><span>发送歌曲到手机</span></a>
 </div>
 <div>
-	<button id="same"><img src="jpg/7.jpg">听相似的歌</button>
+	<button id="same"><img src="jpg/7.jpg" id="yinfu">听相似的歌</button>
 </div>
 <div>
 	<button id="load"><img src="jpg/8.jpg"><span>4.0来了！来下载吧</span></button>
@@ -122,9 +147,9 @@
 	href="#">FM用户手册 </a>|</span><br>
 	<a href="#">豆瓣FM中心</a>
 </div>
-<!-- <div id="pull">
-	<div id="zhankai"><span>></span></div>
-</div> -->
+ <div id="pull1">
+	<div id="zhankai1"><span>></span></div>
+</div>
 <div id="quanbu">
 	<div id="head">
 		<span id="wenzi">全部兆赫</span>
@@ -242,7 +267,9 @@
 		<ul type="none">
 			<li>
 				<div>
-					<img src="jpg/20.jpg" class="yuan">
+					<img src="jpg/20.jpg" class="yuan" onmouseover="yy(0);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(0)" onmouseout="yuanlai(0)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(0);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -254,7 +281,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/21.jpg" class="yuan">
+					<img src="jpg/21.jpg" class="yuan" onmouseover="yy(1);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(1)" onmouseout="yuanlai(1)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(1);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -266,7 +295,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/22.jpg" class="yuan">
+					<img src="jpg/22.jpg" class="yuan" onmouseover="yy(2);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(2)" onmouseout="yuanlai(2)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(2);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -278,7 +309,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/23.jpg" class="yuan">
+					<img src="jpg/23.jpg" class="yuan" onmouseover="yy(3);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(3)" onmouseout="yuanlai(3)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(3);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -290,7 +323,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/24.jpg" class="yuan">
+					<img src="jpg/24.jpg" class="yuan" onmouseover="yy(4);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(4)" onmouseout="yuanlai(4)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(4);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -302,7 +337,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/25.jpg" class="yuan">
+					<img src="jpg/25.jpg" class="yuan" onmouseover="yy(5);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(5)" onmouseout="yuanlai(5)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(5);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -319,7 +356,9 @@
 		<ul type="none">
 			<li>
 				<div>
-					<img src="jpg/26.jpg" class="yuan">
+					<img src="jpg/26.jpg" class="yuan" onmouseover="yy(6);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(6)" onmouseout="yuanlai(6)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(6);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -330,7 +369,9 @@
 				</div>
 			</li><li>
 				<div>
-					<img src="jpg/27.jpg" class="yuan">
+					<img src="jpg/27.jpg" class="yuan" onmouseover="yy(7);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(7)" onmouseout="yuanlai(7)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(7);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -341,7 +382,9 @@
 				</div>
 			</li><li>
 				<div>
-					<img src="jpg/28.jpg" class="yuan">
+					<img src="jpg/28.jpg" class="yuan" onmouseover="yy(8);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(8)" onmouseout="yuanlai(8)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(8);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -353,7 +396,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/29.jpg" class="yuan">
+					<img src="jpg/29.jpg" class="yuan" onmouseover="yy(9);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(9)" onmouseout="yuanlai(9)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(9);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -365,7 +410,9 @@
 			</li>
 			<li>
 				<div>
-					<img src="jpg/30.jpg" class="yuan">
+					<img src="jpg/30.jpg" class="yuan" onmouseover="yy(10);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(10)" onmouseout="yuanlai(10)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(10);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -376,7 +423,9 @@
 				</div>
 			</li><li>
 				<div>
-					<img src="jpg/31.jpg" class="yuan">
+					<img src="jpg/31.jpg" class="yuan" onmouseover="yy(11);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(11)" onmouseout="yuanlai(11)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(11);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -393,7 +442,9 @@
 		<ul type="none">
 			<li>
 				<div>
-					<img src="jpg/20.jpg" class="yuan">
+					<img src="jpg/32.jpg" class="yuan" onmouseover="yy(12);">
+					<img src="jpg/33.jpg" class="yin" onclick="deng(12)" onmouseout="yuanlai(12)">
+					<img src="jpg/34.jpg" class="dian"  onmouseover="y(12);">
 					<div class="neirong">
 						<h4>运动 Mhz</h4>
 						<div>
@@ -403,6 +454,47 @@
 					</div>
 				</div>
 			</li>
+			<script type="text/javascript">
+				var yuan =  document.getElementsByClassName("yuan");
+				var yin =  document.getElementsByClassName("yin");
+				var dian =  document.getElementsByClassName("dian");
+				function yy(xs){
+					for ( i = 0; i < 13; i++) {
+						if (i==xs) {
+							yuan[i].style.display="none";
+							yin[i].style.display="block";
+						}
+					}
+				}
+				function deng(s){
+					for ( i = 0; i < 13; i++) {
+						if (i==s) {
+							yuan[i].style.display="none";
+							dian[i].style.display="block";
+							yin[i].style.display="none";
+						} 
+					}
+				}
+				function y(x){
+					for ( i = 0; i < 13; i++) {
+						if (i==x) {
+							yuan[i].style.display="none";
+							yin[i].style.display="none";
+							dian[i].style.display="block";
+						} 
+					}
+				}
+				function yuanlai(x){
+					for ( i = 0; i < 13; i++) {
+						if (i==x) {
+							yuan[i].style.display="block";
+							yin[i].style.display="none";
+							dian[i].style.display="none";
+						} 
+					}
+				}
+				
+			</script>
 		</ul>
 	</div>
 </div>
