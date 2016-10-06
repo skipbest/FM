@@ -121,6 +121,8 @@
         xstime.innerHTML ='-'+ zfen + ':' + zmiao;
     }
 
+    var dice =document.getElementById('dice');
+	var jice=document.getElementById('jice');
     audio.ontimeupdate = function() {
         var ztime = audio.duration;
         var bshiJian = audio.currentTime;
@@ -131,6 +133,9 @@
         var fen=zfen-bfen;
         var miao=zmiao-bmiao;
         xstime.innerHTML = '-'+fen + ':' + miao ;
+
+        var t = (bshiJian / ztime);
+        jice.style.width = t * (dice.offsetWidth) + "px";
     }
 
 	var ting1=document.getElementById("ting1");
