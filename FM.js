@@ -150,12 +150,14 @@
 		ting2.style.display='none';
 		jixu.style.display='block';
 		contin.style.display='block';
+		audio.pause();
 	}
 	contin.onclick=function(){
 		ting1.style.display='block';
 		ting2.style.display='none';
 		jixu.style.display='none';
 		contin.style.display='none';
+		audio.play();
 	}
 
 
