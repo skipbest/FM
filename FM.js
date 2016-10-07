@@ -293,6 +293,21 @@
 		tong1.style.display='block';
 		tong2.style.display='none';
 	}
+	tong2.onclick=function(){
+		if (audio.src.match('1')) {
+			audio.src="music/2.mp3";
+			picture.src='jpg/3.jpg';
+			xiliename.innerHTML='The Hunger Games';
+			zhujiname.innerHTML='< Songs from District 12 and Beyond > 2011';
+			song.innerHTML='Safe and Sound';
+		}else {
+			audio.src="music/1.mp3";
+			picture.src='jpg/2.jpg';
+			xiliename.innerHTML='Made Series';
+			zhujiname.innerHTML='< A >2016';
+			song.innerHTML='Bang Bang Bang';
+			}
+	}
 
 	var xiayi1=document.getElementById("xiayi1");
 	var xiayi2=document.getElementById("xiayi2");
@@ -304,23 +319,32 @@
 		xiayi1.style.display='block';
 		xiayi2.style.display='none';
 	}
+
+	var add = document.getElementById('add');
+    var lujing1 = document.getElementById('lujing1');
+    var lujing2 = document.getElementById('lujing2');
+    add.onclick = function() {
+        var file1 = lujing1.files[0]
+        url1 = URL.createObjectURL(file1);
+        audio.src = url1;
+        var file2 = lujing2.files[0]
+        url2 = URL.createObjectURL(file2);
+        audio.src = url2;
+    }
+
 	var picture=document.getElementsByClassName('picture')[0];
 	var xiliename=document.getElementById('xiliename');
 	var zhujiname=document.getElementById('zhujiname');
 	var song=document.getElementById('song');
 	xiayi2.onclick=function(){
-		if (audio.src.match('1')) {
-			console.log(audio.src)
-			audio.src="music/2.mp3";
+		if (audio.src==url1) {
+			audio.src=url2;
 			picture.src='jpg/3.jpg';
 			xiliename.innerHTML='The Hunger Games';
 			zhujiname.innerHTML='< Songs from District 12 and Beyond > 2011';
 			song.innerHTML='Safe and Sound';
 		}else {
-
-
-			console.log(audio.src)
-			audio.src="music/1.mp3";
+			audio.src=url1;
 			picture.src='jpg/2.jpg';
 			xiliename.innerHTML='Made Series';
 			zhujiname.innerHTML='< A >2016';

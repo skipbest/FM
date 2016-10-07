@@ -144,13 +144,11 @@
     top: 90px;
 	width:510px;
 	height:245px;
-	border: 1px solid #000;
 	box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 #poster{
 	width:245px;
 	height:245px;
-	border: 1px solid #000;
 }
 .picture{
 	position: absolute;
@@ -179,7 +177,6 @@
 	left: 0px;
 	width:245px;
 	height:245px;
-	border: 1px solid #999;
 	background-color: #c1c1c1;
 	opacity:0.2;
 	display: none;
@@ -192,7 +189,6 @@
 	width:263px;
 	height:245px;
 	background-color: #fff;
-	border: 1px solid #000;
 }
 #continue{
 	position: absolute;
@@ -313,6 +309,12 @@
 	position: absolute;
 	left: 76px;
     top: 166px;
+    cursor: pointer;
+}
+#hongxin2{
+	position: absolute;
+	left: 82px;
+    top: 167px;
     cursor: pointer;
 }
 #tong1{
@@ -462,7 +464,7 @@
 	left: 6px;
 	height: 100%;
 	width: 25px;
-	box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.1);
 	z-index: 88;
 	cursor: pointer;
 }
@@ -484,4 +486,9 @@
 }
 #pull1:hover #zhankai1{
 	background-color: #9dd6c5;
+}
+#wenjian{
+	position: fixed;
+	left: 622px;
+    top: 55px;
 }
