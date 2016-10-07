@@ -304,9 +304,29 @@
 		xiayi1.style.display='block';
 		xiayi2.style.display='none';
 	}
-	// xiayi2.onclick=function(){
+	var picture=document.getElementsByClassName('picture')[0];
+	var xiliename=document.getElementById('xiliename');
+	var zhujiname=document.getElementById('zhujiname');
+	var song=document.getElementById('song');
+	xiayi2.onclick=function(){
+		if (audio.src.match('1')) {
+			console.log(audio.src)
+			audio.src="music/2.mp3";
+			picture.src='jpg/3.jpg';
+			xiliename.innerHTML='The Hunger Games';
+			zhujiname.innerHTML='< Songs from District 12 and Beyond > 2011';
+			song.innerHTML='Safe and Sound';
+		}else {
 
-	// }
+
+			console.log(audio.src)
+			audio.src="music/1.mp3";
+			picture.src='jpg/2.jpg';
+			xiliename.innerHTML='Made Series';
+			zhujiname.innerHTML='< A >2016';
+			song.innerHTML='Bang Bang Bang';
+			}
+	}
 
 
 }(window))
