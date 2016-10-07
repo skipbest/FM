@@ -138,10 +138,80 @@
         jice.style.width = t * (dice.offsetWidth) + "px";
     }
 
+
+    var volum=document.getElementById("volum");
+	var yinliang=document.getElementById("yinliang");
+	var youse=document.getElementById("youse");
+	var kongbai=document.getElementById("kongbai");
+	yinliang.onmouseover=function(){
+		youse.style.display='block';
+		kongbai.style.display='block';
+		xstime.style.display='none';
+		yinliang.style.left='47px';
+		youse.style.left='57px';
+		kongbai.style.left='57px';
+	}
+	youse.onmouseover=function(){
+		youse.style.display='block';
+		kongbai.style.display='block';
+		xstime.style.display='none';
+		yinliang.style.left='47px';
+		youse.style.left='57px';
+		kongbai.style.left='57px';
+	}
+	kongbai.onmouseover=function(){
+		youse.style.display='block';
+		kongbai.style.display='block';
+		xstime.style.display='none';
+		yinliang.style.left='47px';
+		youse.style.left='57px';
+		kongbai.style.left='57px';
+	}	
+	volum.onmouseout=function(){
+		youse.style.display='none';
+		kongbai.style.display='none';
+		xstime.style.display='block';
+		yinliang.style.left='90px';
+		youse.style.left='100px';
+		kongbai.style.left='100px';
+	}
+	youse.onclick= function() {
+        youse.style.backgroundColor = "#aaa";
+        youse.style.width='43px';
+        var e = event.x -1070;
+        kongbai.style.width = e + 'px';
+        audio.volume = (parseInt(kongbai.style.width) / parseInt(youse.style.width));
+
+		youse.style.display='block';
+		kongbai.style.display='block';
+		xstime.style.display='none';
+		yinliang.style.left='47px';
+		youse.style.left='57px';
+		kongbai.style.left='57px';
+	}
+	kongbai.onclick=function(){
+
+        youse.style.width='43px';
+		youse.style.backgroundColor = "#aaa";
+        var e = event.x -1070;
+        kongbai.style.width = e + 'px';
+        audio.volume = (parseInt(kongbai.style.width) / parseInt(youse.style.width));
+
+		youse.style.display='block';
+		kongbai.style.display='block';
+		xstime.style.display='none';
+		yinliang.style.left='47px';
+		youse.style.left='57px';
+		kongbai.style.left='57px';
+	}
+
+
+
 	var ting1=document.getElementById("ting1");
 	var ting2=document.getElementById("ting2");
 	var jixu=document.getElementById("jixu");
-	var contin=document.getElementById("continue")
+	var contin=document.getElementById("continue");
+	var ting=document.getElementById("ting");
 	ting1.onmouseover=function(){
 		ting2.style.display='block';
 		ting1.style.display='none';
@@ -151,14 +221,20 @@
 		ting2.style.display='none';
 	}
 	ting2.onclick=function(){
-		ting1.style.display='none';
-		ting2.style.display='none';
+		ting.style.display='none';
 		jixu.style.display='block';
 		contin.style.display='block';
 		audio.pause();
 	}
 	contin.onclick=function(){
-		ting1.style.display='block';
+		ting.style.display='block';
+		ting2.style.display='none';
+		jixu.style.display='none';
+		contin.style.display='none';
+		audio.play();
+	}
+	jixu.onclick=function(){
+		ting.style.display='block';
 		ting2.style.display='none';
 		jixu.style.display='none';
 		contin.style.display='none';

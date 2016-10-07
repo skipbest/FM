@@ -201,8 +201,9 @@
 	width:263px;
 	height:245px;
 	background-color: #fff;
-	opacity: 0.4;
+	opacity: 0.7;
 	display: none;
+	cursor: pointer;
 }
 #jixu{
 	position: absolute;
@@ -210,6 +211,8 @@
     left: 100px;
     font-size: 13px;
     display: none;
+    z-index: 999;
+    cursor: pointer;
 }
 #ting1{
 	position: absolute;
@@ -267,28 +270,38 @@
 }
 #volum{
 	position: absolute;
-	left: 236px;
-    top: 115px;
+	left: 142px;
+    top: 116px;
+    width: 100px;
+    height: 50px;
+}
+#yinliang{
+	position: absolute;
+	left: 90px;
+    top: 0px;
 }
 #youse{
-	width: 60px;
-	height: 0px;
+	width: 43px;
+	height: 1px;
 	border: none;
 	background-color: #323232;
 	position: absolute;
-	left:  10px;
-    top: 9px;
+	left:  100px;
+    top:4px;
     cursor: pointer;
+    display: none;
 }
 #kongbai{
-	width: 60px;
-	height: 0px;
+	width: 0px;
+	height: 1px;
 	border: none;
 	background-color: #323232;
+	box-shadow: 5px 0px 5px 0px #fff;
 	position: absolute;
-	left:  10px;
-    top: 9px;
+	left:  100px;
+    top: 4px;
     cursor: pointer;
+    display: none;
 }
 .xin1{
 	position: absolute;
